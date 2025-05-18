@@ -23,14 +23,29 @@
  * first
  * first
  */
-myFunc();
-var myFunc = function () {
-  console.log("first");
-};
+// myFunc();
+// var myFunc = function () {
+//   console.log("first");
+// };
 
-myFunc();
+// myFunc();
 
-function myFunc() {
-  console.log("second");
-}
-myFunc();
+// function myFunc() {
+//   console.log("second");
+// }
+// myFunc();
+
+//************************************************************************** */
+/**
+ * ReferenceError: localA is not defined
+ */
+
+// var globalA = 100;
+// (() => {
+//   var localA = 100;
+//   console.log(globalA);
+//   console.log(localA);
+// })();
+
+// console.log(globalA); // Reference error
+// console.log(localA);
